@@ -226,7 +226,7 @@ def playutube(bname=None, element=2):
     #'style-scope ytd-video-primary-info-renderer'
 
     if simArtists == 'yes':
-        otherbands = requests.get('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + bname + '&api_key=fd703c57452c52124d75cc8fa5cfc780')
+        otherbands = requests.get('http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=' + bname + '&api_key='your api key here')
         sec = otherbands.text
         soup = BeautifulSoup(sec, 'html.parser')
         check = soup.find_all('name')
